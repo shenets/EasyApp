@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="EasyApp.AppHost/EasyApp.AppHost.csproj" />
+  <Project Path="EasyApp.Server/EasyApp.Server.csproj" />
+  <Project Path="frontend/frontend.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
