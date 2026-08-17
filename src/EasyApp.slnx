@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="Api.Gateway/Api.Gateway.csproj" />
+  <Project Path="Api.WeatherForecast/Api.WeatherForecast.csproj" />
   <Project Path="EasyApp.AppHost/EasyApp.AppHost.csproj" />
   <Project Path="EasyApp.Server/EasyApp.Server.csproj" />
   <Project Path="frontend/frontend.esproj">
