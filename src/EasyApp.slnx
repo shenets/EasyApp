@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Api.Auth/Api.Auth.csproj" Id="e4ed9a8c-bd7a-4a2b-97aa-80f9a84047d0" />
   <Project Path="Api.Gateway/Api.Gateway.csproj" />
   <Project Path="Api.WeatherForecast/Api.WeatherForecast.csproj" />
   <Project Path="EasyApp.AppHost/EasyApp.AppHost.csproj" />

@@ -1,22 +1,21 @@
+using Api.Auth;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<TokenService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-
-    app.MapGet("/", () => Results.Redirect("/swagger"))
+    app.MapGet("/", () => Results.Redirect("/health"))
         .ExcludeFromDescription();
 }
 
-app.UseHttpsRedirection();
+app.MapGet("/health", () => Results.Ok(new { status = "ok", auth = "running" }));
 
 app.MapControllers();
 

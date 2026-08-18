@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.WeatherForecast.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries =
@@ -13,6 +13,18 @@ namespace Api.WeatherForecast.Controllers
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
+        {
+            return Enumerable.Range(1, 2).Select(index => new WeatherForecast
+            {
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+
+        [HttpGet("private")]
+        public IEnumerable<WeatherForecast> GetPrivate()
         {
             return Enumerable.Range(1, 2).Select(index => new WeatherForecast
             {

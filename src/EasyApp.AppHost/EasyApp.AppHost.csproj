@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Api.Auth\Api.Auth.csproj" />
     <ProjectReference Include="..\Api.Gateway\Api.Gateway.csproj" />
     <ProjectReference Include="..\Api.WeatherForecast\Api.WeatherForecast.csproj" />
     <ProjectReference Include="..\EasyApp.Server\EasyApp.Server.csproj" />

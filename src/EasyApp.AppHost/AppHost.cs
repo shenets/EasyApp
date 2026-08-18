@@ -8,6 +8,10 @@ var gateway = builder.AddProject<Projects.Api_Gateway>("ApiGateway")
     .WithHttpHealthCheck("/health")
     .WithExternalHttpEndpoints();
 
+var auth = builder.AddProject<Projects.Api_Auth>("ApiAuth")
+    .WithHttpHealthCheck("/health")
+    .WithExternalHttpEndpoints();
+
 var weatherForecast = builder.AddProject<Projects.Api_WeatherForecast>("ApiForecast")
     .WithHttpHealthCheck("/health")
     .WithExternalHttpEndpoints();

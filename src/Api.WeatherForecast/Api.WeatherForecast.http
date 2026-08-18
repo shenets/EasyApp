@@ -1,6 +1,9 @@
 @Api.WeatherForecast_HostAddress = http://localhost:5264
 
-GET {{Api.WeatherForecast_HostAddress}}/weatherforecast/
+GET {{Api.WeatherForecast_HostAddress}}/api/weatherforecast/
+Accept: application/json
+
+GET {{Api.WeatherForecast_HostAddress}}/api/weatherforecast/private/
 Accept: application/json
 
 ###
