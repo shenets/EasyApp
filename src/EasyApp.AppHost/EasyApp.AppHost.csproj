@@ -1,4 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.4.6">
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.4.6">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,11 +11,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Api.Auth\Api.Auth.csproj" />
     <ProjectReference Include="..\Api.Gateway\Api.Gateway.csproj" />
-    <ProjectReference Include="..\Api.WeatherForecast\Api.WeatherForecast.csproj" />
+    <ProjectReference Include="..\Api.Forecast\Api.Forecast.csproj" />
     <ProjectReference Include="..\EasyApp.Server\EasyApp.Server.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.JavaScript" Version="13.4.6" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Sqlite" Version="13.4.0" />
   </ItemGroup>
 </Project>

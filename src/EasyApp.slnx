@@ -1,11 +1,15 @@
 <Solution>
   <Project Path="Api.Auth/Api.Auth.csproj" Id="e4ed9a8c-bd7a-4a2b-97aa-80f9a84047d0" />
   <Project Path="Api.Gateway/Api.Gateway.csproj" />
-  <Project Path="Api.WeatherForecast/Api.WeatherForecast.csproj" />
+  <Project Path="Api.News/Api.News.csproj" Id="5e8eb273-b5ea-4121-960b-07f5dfcf9de4" />
+  <Project Path="Api.Forecast/Api.Forecast.csproj" />
   <Project Path="EasyApp.AppHost/EasyApp.AppHost.csproj" />
+  <Project Path="EasyApp.Benchmarks/EasyApp.Benchmarks.csproj" Id="ab0a0568-80e8-49ec-952a-ff7550d62d55" />
   <Project Path="EasyApp.Server/EasyApp.Server.csproj" />
   <Project Path="frontend/frontend.esproj">
     <Build />
     <Deploy />
   </Project>
+  <Project Path="Shared/Shared.csproj" />
 </Solution>
+

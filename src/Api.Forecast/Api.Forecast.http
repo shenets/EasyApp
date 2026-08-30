@@ -1,0 +1,18 @@
+File: src\Api.Forecast\Api.Forecast.http
+
+@Api.Forecast_HostAddress = http://localhost:5264
+
+GET {{Api.Forecast_HostAddress}}/api/predictions/forecast/
+Accept: application/json
+
+GET {{Api.Forecast_HostAddress}}/api/predictions/forecast-async/
+Accept: application/json
+
+GET {{Api.Forecast_HostAddress}}/api/stored/forecast/
+Accept: application/json
+
+GET {{Api.Forecast_HostAddress}}/api/stored/forecast-async/
+Accept: application/json
+
+###
+

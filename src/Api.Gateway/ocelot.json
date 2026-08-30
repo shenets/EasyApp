@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/weatherForecast",
+      "DownstreamPathTemplate": "/api/predictions",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,11 +9,11 @@
           "Port": 7299
         }
       ],
-      "UpstreamPathTemplate": "/api/weatherForecast",
+      "UpstreamPathTemplate": "/api/predictions",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
     },
     {
-      "DownstreamPathTemplate": "/api/weatherForecast/{everything}",
+      "DownstreamPathTemplate": "/api/predictions/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -21,12 +21,40 @@
           "Port": 7299
         }
       ],
-      "UpstreamPathTemplate": "/api/weatherForecast/{everything}",
+      "UpstreamPathTemplate": "/api/predictions/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "DownstreamPathTemplate": "/api/stored",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7299
+        }
+      ],
+      "UpstreamPathTemplate": "/api/stored",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/stored/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7299
+        }
+      ],
+      "UpstreamPathTemplate": "/api/stored/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //}
     }
   ]
 }
