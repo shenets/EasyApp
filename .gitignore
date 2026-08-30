@@ -32,3 +32,14 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+## Local data
+*.db
+*.db-*
+## Copilot instructions
+copilot-instructions.md
+**/copilot-instructions.md
+
+BenchmarkDotNet.Artifacts/
+**/BenchmarkDotNet.Artifacts/
+*.benchmarks.results
+*.benchmarkDotNet*
