@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Shared.FileReader.Loader">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Shared.FileReader.Loader.ClosedXMLExcel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Loader.ClosedXMLExcel.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Shared.FileReader.Loader.SystemDataSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Loader.SystemDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Shared.FileReader.Loader.SystemDataSetFilePath" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Loader.SystemDataSetFilePath.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\Loader.ClosedXMLExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shared.FileReader.Mapper">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Shared.FileReader.Mapper.ClosedXMLExcel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Mapper.ClosedXMLExcel.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Interface Name="Shared.FileReader.Mapper.IRowSource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Mapper.IRowSource.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="Shared.FileReader.Mapper.SystemDataRow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Mapper.SystemDataRow.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\Mapper.ClosedXMLExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shared.FileReader.Reader">
+    <Position X="9.75" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Shared.FileReader.Reader.ClosedXMLExcel">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Reader.ClosedXMLExcel.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Interface Name="Shared.FileReader.Reader.IFileReader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Reader.IFileReader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+      <Class Name="Shared.FileReader.Reader.SystemDataSet">
+        <TypeIdentifier>
+          <NewMemberFileName>FileReader\Reader.SystemDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\Reader.ClosedXMLExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shared.FileReader.ValidationResult">
+    <Position X="1.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAgAAAAAAgAAAACAAAAAIAAAAAA=</HashCode>
+      <FileName>FileReader\ValidationResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shared.FileReader.WorksheetProcessor">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAgAAAIAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\WorksheetProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Shared.FileReader.IFileLoader&lt;T&gt;">
+    <Position X="5.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\IFileLoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shared.FileReader.IRow">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAEBAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\IRow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shared.FileReader.IRowCreatorMethod">
+    <Position X="8" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileReader\IRowCreatorMethod.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
