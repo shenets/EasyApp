@@ -30,7 +30,7 @@ namespace Shared
         //public bool IsValid { get; set; } = true;
 
         public decimal Limit { get; set; }
-        public uint Age { get; set; }
+        public int Age { get; set; }
         public string Email { get; set; } = "";
 
         public string Serialize()
@@ -64,15 +64,15 @@ namespace Shared
 
     public class WorksheetStructure
     {
-        public static IReadOnlyDictionary<string, (IRowCreatorMethod CreatorMethod, IReadOnlyList<object> Validators)> Get()
+        public static IReadOnlyDictionary<string, (IRowCreatorMethod CreatorMethod, IReadOnlyList<IValidatorGroup> Validators)> Get()
         {
             FieldValidator.Group<decimal, Row> limitGroup = new("Limit", source => decimal.TryParse(source, out decimal value) ? value : 0m, (row, value) => row.Limit = value);
             limitGroup.Validators.Add(new FieldValidator.MandatoryValidator<decimal>());
             limitGroup.Validators.Add(new FieldValidator.PositiveDecimalValidator());
             limitGroup.Validators.Add(new FieldValidator.LimitDecimalValidator(-15, 30));
 
-            FieldValidator.Group<uint, Row> ageGroup = new("Age", source => uint.TryParse(source, out uint value) ? value : 0, (row, value) => row.Age = value);
-            ageGroup.Validators.Add(new FieldValidator.MandatoryValidator<uint>());
+            FieldValidator.Group<int, Row> ageGroup = new("Age", source => int.TryParse(source, out int value) ? value : 0, (row, value) => row.Age = value);
+            ageGroup.Validators.Add(new FieldValidator.MandatoryValidator<int>());
             ageGroup.Validators.Add(new FieldValidator.AdultValidator());
 
             FieldValidator.Group<string, Row> emailGroup = new("Email", source => source, (row, value) => row.Email = value);
@@ -90,7 +90,7 @@ namespace Shared
             Sheet1RowCreator sheet1RowCreator = new();
             Sheet2RowCreator sheet2RowCreator = new();
 
-            return new Dictionary<string, (IRowCreatorMethod CreatorMethod, IReadOnlyList<object> Validators)>
+            return new Dictionary<string, (IRowCreatorMethod CreatorMethod, IReadOnlyList<IValidatorGroup> Validators)>
             {
                 { "Sheet1", new (sheet1RowCreator, [limitGroup, ageGroup, emailGroup]) },
                 //{ "Sheet2", new (sheet2RowCreator, [subscriberIdGroup]) },

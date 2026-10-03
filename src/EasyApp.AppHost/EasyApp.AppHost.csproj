@@ -1,4 +1,4 @@
-﻿<Project Sdk="Aspire.AppHost.Sdk/13.4.6">
+<Project Sdk="Aspire.AppHost.Sdk/13.4.6">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -12,7 +12,11 @@
     <ProjectReference Include="..\Api.Auth\Api.Auth.csproj" />
     <ProjectReference Include="..\Api.Gateway\Api.Gateway.csproj" />
     <ProjectReference Include="..\Api.Forecast\Api.Forecast.csproj" />
+    <ProjectReference Include="..\Api.Uploader\Api.Uploader.csproj" />
+
+    <ProjectReference Include="..\Worker.Validation\Worker.Validation.csproj" />
     <ProjectReference Include="..\EasyApp.Server\EasyApp.Server.csproj" />
+    <ProjectReference Include="..\Worker.Uploader\Worker.Uploader.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,3 +24,5 @@
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.Sqlite" Version="13.4.0" />
   </ItemGroup>
 </Project>
+
+

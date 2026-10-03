@@ -3,6 +3,9 @@
   <Project Path="Api.Gateway/Api.Gateway.csproj" />
   <Project Path="Api.News/Api.News.csproj" Id="5e8eb273-b5ea-4121-960b-07f5dfcf9de4" />
   <Project Path="Api.Forecast/Api.Forecast.csproj" />
+  <Project Path="Worker.Uploader.Tests/Worker.Uploader.Tests.csproj" />
+  <Project Path="Worker.Uploader/Worker.Uploader.csproj" />
+  <Project Path="Api.Uploader/Api.Uploader.csproj" />
   <Project Path="EasyApp.AppHost/EasyApp.AppHost.csproj" />
   <Project Path="EasyApp.Benchmarks/EasyApp.Benchmarks.csproj" Id="ab0a0568-80e8-49ec-952a-ff7550d62d55" />
   <Project Path="EasyApp.Server/EasyApp.Server.csproj" />
@@ -11,5 +14,8 @@
     <Deploy />
   </Project>
   <Project Path="Shared/Shared.csproj" />
+  <Project Path="Worker.Validation/Worker.Validation.csproj" />
 </Solution>
+
+
 
